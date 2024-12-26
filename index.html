@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rohit's Multiplication Table
+        </title>
+        <style>
+            .circle {
+    background-color: grey; 
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.simulation {
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="simulation">
+        <h1> Traffic Light Simulation </h1>
+        <button style="background-color:Red" id="stop"> Red </button>
+        <button style="background-color:Yellow" id="slow"> Yellow </button>
+        <button style="background-color:Green" id="go"> Green </button>
+        <div class="circle" id="circle"></div>
+        </div>
+        <script>
+                var redLight = document.getElementById("stop");
+                var yellowLight = document.getElementById("slow");
+                var greenLight = document.getElementById("go");
+                var display = document.getElementById("circle");
+                redLight.addEventListener('click',() => {
+                    display.style.backgroundColor='Red'
+                })
+                yellowLight.addEventListener('click',() => {
+                    display.style.backgroundColor='Yellow'
+                })
+                greenLight.addEventListener('click',() => {
+                    display.style.backgroundColor='Green'
+                })
+        </script>
+    </body>
+</html>
